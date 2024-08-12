@@ -1,0 +1,688 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway+Dots&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway+Dots&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    /* border:  1px solid red;  */
+}
+
+.main-container{
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+#input-box{
+    display: none;
+    /* width: 92%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px; */
+}
+
+#input-box input{
+    border: none;
+    background-color: transparent;
+}
+#input-box i{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    color: gray;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+}
+.nav-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* gap: 30px; */
+    
+}
+.nav-cont img{
+    width: 4%;
+    height: auto;
+}
+.input{
+    width: 75%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* gap: 10px; */
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+.input i{
+    width: 5%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    color: rgb(75, 74, 74);
+}
+.input input{
+    border: none;
+    background-color: transparent;
+}
+
+.nav-cont button{
+    width: 10%;
+    height: 44px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    font-size: .9em;
+    border-radius: 10px;
+}
+.nav-i{
+    width: 4%;
+    font-size: 1.6em;
+    /* font-weight: 100; */
+    color: rgb(79, 79, 79);
+}
+.hero-section{
+    width: 100%;
+    height: auto;
+    background-image: url(./assetes/landing-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-contant{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    padding-top: 120px;
+    gap: 20px;
+}
+.hero-contant img{
+    width: 22%;
+}
+.hero-contant h2{
+    font-size: 2em;
+    color: white;
+    letter-spacing: .5px;
+}
+.hero-contant p{
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.hero-btn{
+    width: 22%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-btn button{
+    width: 48%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    color: white;
+    transition: .4s;
+}
+.hero-btn button:first-child{
+    background-color: red;
+    transition: .5 ease;
+    /* border: ; */
+}
+.hero-btn button:last-child{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.hero-btn button:first-child:hover{
+    background-color: rgb(182, 12, 12);
+    /* border: ; */
+   
+}
+.hero-btn button:last-child:hover{
+    background-color: white;
+    border: 1px solid #fff;
+    color: red;
+}
+.location-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 40px;
+    background-color: #F1F1F3;
+}
+.location-contant{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.location-contant h1{
+    font-size: 3em;
+    font-weight: 400;
+}
+.loc-boxes{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.loc-box{
+    width: 20%;
+    height: 180px;
+    background-color: #E3392B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+.loc-box:hover{
+    background-color: rgb(149, 9, 9);
+}
+.loc-box h2{
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.loc-box p{
+    font-size: .9em;
+    text-align: center;
+}
+.loc-box a{
+    text-decoration: none;
+    color: #fff;
+}
+.loc-pera p{
+    padding-block: 10px;
+    font-size: 1.1em;
+    color: grey;
+}
+.loc-pera p span{
+    font-size: 1.2;
+    font-weight: 800;
+}
+.work-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 40px;
+}
+.work-section h1{
+    font-size: 2.7em;
+    font-weight: 600;
+}
+.wort-contantes{
+     width: 80%;
+    height: auto;
+    padding-block: 30px;
+}
+.first-work-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-left{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.first-left h1{
+    width: 65%;
+    font-size: 1.8em;
+}
+.first-left p{
+    width: 65%;
+    font-size: 1.1em;
+    color: rgb(79, 78, 78);
+}
+.first-right{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+.first-right img{
+    width: 90%;
+}
+.second-work-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second-left{
+    width: 50%;
+    height: auto;
+}
+.second-right{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.second-right h1{
+    width: 65%;
+    font-size: 1.8em;
+}
+.second-right p{
+    width: 65%;
+    font-size: 1.1em;
+    color: rgb(79, 78, 78);
+}
+.work-btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 30px; */
+}
+.work-btn button{
+    width: 15%;
+    height: 60px;
+    background-color: red;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 6px;
+}
+.footer-part{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-opetions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #160B08;
+    gap: 50px;
+    padding-block: 15px;
+}
+.footer-opetions a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+.footer-end{
+    width: 100%;
+    height: auto;
+    background-color: #100705;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10px;
+}
+.footer-end p{
+    font-size: .9em;
+}
+.footer-end p span{
+    color: green;
+    font-weight: 500;
+}
+@media (max-width:760px) {
+    .main-container{
+        width: 100%;
+        height: auto;
+    }
+    #input-box{
+        /* display: none; */
+        width: 92%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: rgb(245, 245, 245);
+        border-radius: 10px;
+        /* padding-inline: 30px; */
+        margin-left: 20px;
+        /* padding-bottom: 5px; */
+        margin-bottom: 10px;
+    }
+    
+    #input-box input{
+        border: none;
+        background-color: transparent;
+    }
+    #input-box i{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3em;
+        color: gray;
+    }
+    .navbar{
+        width: 100%;
+        height: auto;
+    }
+    .nav-cont{
+        width: 100%;
+        height: auto;
+    }
+    .nav-cont img{
+        width: 8%;
+    }
+    .input{
+        /* display: none; */
+        width: 70%;
+        padding-inline: 10px;
+        background-color: white;
+    }
+    .input i{
+        display: none;
+    }
+    .input input{
+        display: none;
+    }
+    .input button{
+        width: 50%;
+    }
+    .nav-cont button span{
+        display: none;
+    }
+    .hero-section{
+        width: 100%;
+        height: auto;
+    }
+    .hero-contant{
+        width: 100%;
+        height: auto;
+        padding-top: 100px;
+    }
+    .hero-btn{
+        width: 40%;
+    }
+    .hero-btn button{
+        font-size: 1em;
+    }
+    .location-section{
+        width: 100%;
+        height: auto;
+    }
+    .location-contant{
+        width: 100%;
+        height: auto;
+    }
+    .loc-boxes{
+        width: 98%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .loc-box{
+        width: 30%;
+        /* height: auto; */
+        padding: 10px;
+    }
+    .loc-pera{
+        width: 80%;
+        text-align: center;
+        font-size: 1em;
+    }
+    .work-section{
+        width: 100%;
+        height: auto;
+    }
+    .wort-contantes{
+        width: 95%;
+        height: auto;
+    }
+    .first-work-cont{
+        width: 100%;
+        height: auto;
+    }
+    .first-left{
+        width: 50%;
+        height: auto;
+    }
+    .first-left h1{
+        width: 80%;
+    }
+    .first-left p{
+        width: 80%;
+    }
+
+    .first-right{
+        width: 50%;
+        height: auto;
+    }
+    .first-right img{
+        width: 100%;
+    }
+    .second-work-cont{
+        width: 100%;
+        height: auto;
+    }
+    .second-right{
+        width: 50%;
+        height: auto;
+    }
+    .second-right h1{
+        width: 80%;
+    }
+    .second-right p{
+        width: 80%;
+    }
+    .second-left{
+        width: 50%;
+        height: auto;
+    }
+    .second-left img{
+        width: 100%;
+    }
+    .work-btn{
+        width: 100%;
+    }
+    .work-btn button{
+        width: 20%;
+        font-size: 1.1em;
+    }
+    .footer-part{
+        width: 100%;
+        height: auto;
+    }
+    .footer-opetions{
+        width: 100%;
+        height: auto;
+        gap: 12px;
+    }
+    .footer-opetions a{
+        font-size: .9em;
+    }
+    .footer-end{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width:450px) {
+    .main-container{
+        width: 100%;
+        height: auto;
+    }
+    .navbar{
+        width: 100%;
+        height: auto;
+    }
+    .nav-cont{
+        width: 100%;
+        height: auto;
+    }
+    .nav-cont img{
+        width: 12%;
+    }
+    .input{
+        width: 60%;
+        gap: 10px;
+        /* padding-left: 10px; */
+    }
+    .nav-cont button{
+        width: 15%;
+        height: 40px;
+    }
+    .hero-section{
+        width: 100%;
+        height: auto;
+    }
+    .hero-contant{
+        width: 100%;
+        height: auto;
+    }
+    .hero-contant img{
+        width: 50%;
+    }
+    .hero-contant P{
+        text-align: center;
+        font-size: 1em;
+    }
+    .hero-btn{
+        width: 60%;
+        height: auto;
+    }
+    .hero-btn button{
+        width: 47%;
+        font-size: 1em;
+    }
+    .location-section{
+        width: 100%;
+        height: auto;
+    }
+    .location-contant{
+        width: 99%;
+        height: auto;
+    }
+    .location-contant h1{
+        font-size: 2.2em;
+        padding-bottom: 20px;
+    }
+    .loc-boxes{
+        width: 100%;
+        height: auto;
+    }
+    .loc-box{
+        width: 40%;
+        text-align: center;
+        /* padding-block: 10px; */
+    }
+    .loc-box h2{
+        font-size: 1.2em;
+    }
+    .loc-box p{
+        font-size: .6em;
+    }
+    .loc-box a{
+        font-size: .8em;
+    }
+    .loc-pera{
+        width: 100%;
+        height: auto;
+        font-size: .8em;
+    }
+    .work-section{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .work-section h1{
+        font-size: 1.8em;
+    }
+    .wort-contantes{
+        width: 100%;
+        height: auto;
+    }
+    .first-work-cont{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .first-left{
+        width: 100%;
+    }
+    .first-right{
+        width: 100%;
+    }
+    .second-work-cont{
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        /* margin-top: 50px; */
+    }
+    .second-left{
+        width: 100%;
+        height: auto;
+    
+    }
+    .second-right{
+        width: 100%;
+    }
+   .work-btn{
+    width: 100%;
+    height: auto;
+   }
+   .work-btn button{
+    width: 30%;
+    font-size: 1em;
+   }
+   .footer-part{
+    width: 100%;
+    height: auto;
+   }
+   .footer-opetions{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    font-size: .7em;
+   }
+   .footer-end{
+    font-size: .8em;
+   }
+}
